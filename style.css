@@ -593,6 +593,8 @@ button {
 		width: 52%;
 		font-size: 3.5rem;
 		text-align: left;
+		position: relative;
+		z-index: 1;
 	}
 	.first-sect p {
 		width: 35%;
@@ -602,13 +604,14 @@ button {
 	.first-sect img {
 		position: absolute;
 		right: 10px;
-		width: 430px;
+		width: 500px;
+		z-index: 0;
 	}
 
 	/* Second section */
 
 	.second-sect {
-		margin: 3rem auto;
+		margin: 5rem auto;
 		padding: 1rem 3rem;
 		max-width: 796px;
 		height: auto;
@@ -665,8 +668,8 @@ button {
 	}
 	.box {
 		position: relative;
-		width: 420px;
-		height: 220px;
+		width: 400px;
+		height: 320px;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
@@ -685,34 +688,33 @@ button {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: space-between;
+		padding: 2.5rem 0;
+		height: 100%;
 		width: 50%;
-	}
-	.box-desc span {
-		position: absolute;
-		background-color: black;
-		width: 5rem;
-		height: 5rem;
-		z-index: -2;
-		border-radius: 11% 5% 1% 1% / 1% 9% 1% 1%;
+		line-height: 20px;
 	}
 	.box img {
 		width: 150px;
 	}
 
 	.box-desc h3 {
-		font-size: 1rem;
-		margin-bottom: 0.5rem;
+		font-size: 1.25rem;
+		margin-bottom: 1.5rem;
+		margin-top: 0;
 	}
 	.box-desc p {
 		font-size: 0.75rem;
 		text-align: justify;
 		margin-bottom: 0.5rem;
 		padding: 0 0.25rem;
+		text-align: left;
 	}
 	.box-desc button {
 		color: darkblue;
 		font-size: 1rem;
 		background-color: transparent;
+		margin-top: auto;
 	}
 
 	/* Fourth section */
