@@ -69,7 +69,7 @@ button {
 	-moz-box-shadow: 0px 2px 2px 0px rgba(231, 227, 227, 1);
 	box-shadow: 0px 2px 2px 0px rgba(231, 227, 227, 1);
 }
-.request-btn i {
+.arrow-right {
 	margin-left: 0.5rem;
 	color: rgb(226, 43, 211);
 }
@@ -218,6 +218,7 @@ button {
 	color: darkblue;
 	font-size: 1rem;
 	background-color: transparent;
+	margin-top: auto;
 }
 
 /* Fourth section */
@@ -547,6 +548,7 @@ button {
 @media screen and (min-width: 996px) {
 	button {
 		padding: 16px;
+		cursor: pointer;
 	}
 
 	/* Nav section */
@@ -561,6 +563,9 @@ button {
 		justify-content: space-between;
 		width: 450px;
 	}
+	.logo {
+		cursor: pointer;
+	}
 	.nav-list {
 		display: flex;
 		flex-direction: row;
@@ -569,6 +574,10 @@ button {
 	.nav-list li {
 		color: grey;
 		list-style: none;
+	}
+	.nav-list li a {
+		text-decoration: none;
+		color: black;
 	}
 	.nav-list .active-li {
 		font-weight: 500;
@@ -584,7 +593,7 @@ button {
 		justify-content: space-around;
 		width: 100%;
 		max-width: 896px;
-		margin: 0 auto;
+		margin: 4rem auto 9rem auto;
 		height: 52vh;
 		padding: 2rem 3rem;
 		position: relative;
@@ -633,16 +642,7 @@ button {
 	/* Third section */
 
 	.third-sect {
-		width: 100%;
-		height: auto;
-		padding-top: 2rem;
 		padding-bottom: 4rem;
-	}
-	.third-sect-head {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 	}
 	.third-sect-head h2 {
 		font-size: 1.75rem;
@@ -654,80 +654,50 @@ button {
 		margin-bottom: 2.75rem;
 	}
 	.container {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
-		width: 90%;
 		max-width: 896px;
-		padding: 2rem 0;
-		margin: 0 auto;
 		gap: 2rem;
-		position: relative;
 	}
 	.box {
-		position: relative;
 		width: 400px;
 		height: 320px;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
 	}
 	.box:nth-child(even) {
-		flex-direction: row;
-		background-color: rgba(190, 223, 252, 0.267);
-		border-radius: 10% 50% 10% 10% / 10% 90% 10% 10%;
-	}
-	.box:nth-child(odd) {
 		flex-direction: row-reverse;
-		background-color: rgba(184, 255, 255, 0.305);
 		border-radius: 50% 10% 10% 10% / 90% 10% 10% 10%;
 	}
 	.box-desc {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-between;
 		padding: 2.5rem 0;
 		height: 100%;
-		width: 50%;
 		line-height: 20px;
 	}
 	.box img {
-		width: 150px;
+		width: 175px;
 	}
 
 	.box-desc h3 {
 		font-size: 1.25rem;
 		margin-bottom: 1.5rem;
-		margin-top: 0;
 	}
 	.box-desc p {
-		font-size: 0.75rem;
-		text-align: justify;
-		margin-bottom: 0.5rem;
-		padding: 0 0.25rem;
 		text-align: left;
-	}
-	.box-desc button {
-		color: darkblue;
-		font-size: 1rem;
-		background-color: transparent;
-		margin-top: auto;
 	}
 
 	/* Fourth section */
 
 	.fourth-sect {
 		margin: 1rem auto;
-		height: 300px;
+		height: 450px;
 		padding: 1rem 3rem;
+		max-width: 796px;
+	}
+	.fourth-sect h2 {
+		padding: 3.25rem 0;
 	}
 	.box-f-s {
-		width: 90%;
+		width: 70%;
 		padding: 2rem 0;
 	}
+
 	.fourth-sec-first-img {
 		margin: 0 0.5rem;
 		width: 50px;
@@ -755,6 +725,48 @@ button {
 		border-radius: 50%;
 	}
 
+	/* Fourth section */
+
+	.box-f-s-part-two p {
+		width: 90%;
+	}
+	.box-f-s-part-two p:nth-child(2) {
+		font-size: 0.75rem;
+		font-weight: 500;
+		color: blueviolet;
+		margin: 0.25rem 0;
+	}
+	.box-f-s-part-two p:nth-child(3) {
+		font-size: 0.75rem;
+	}
+	.fourth-sec-first-img {
+		margin: 0.75rem;
+		width: 45px;
+		height: auto;
+		border-radius: 50%;
+	}
+	.dot-arrow {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-end;
+		width: 100%;
+		gap: 1rem;
+	}
+	.dot {
+		background-color: rgba(255, 223, 252, 0.551);
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		position: relative;
+		z-index: 1;
+	}
+	.active-dot {
+		background-color: rgba(255, 125, 249, 0.573);
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+	}
 	/* Five section */
 
 	/* Footer section */
