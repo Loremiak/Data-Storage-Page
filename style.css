@@ -537,6 +537,7 @@ button {
 	button {
 		padding: 16px;
 		cursor: pointer;
+		transition: 0.3s all ease-in-out;
 	}
 
 	/* Nav section */
@@ -550,6 +551,9 @@ button {
 		flex-direction: row;
 		justify-content: space-between;
 		width: 450px;
+	}
+	.request-btn:hover {
+		background-color: gainsboro;
 	}
 	.logo {
 		cursor: pointer;
@@ -706,6 +710,10 @@ button {
 	.b-f-s-third {
 		width: 250px;
 		display: flex;
+		color: rgba(0, 0, 0, 0.296);
+	}
+	.b-f-s-third .box-f-s-part-two p {
+		color: rgba(0, 0, 0, 0.296);
 	}
 	.box-f-s-part-two p:nth-child(2) {
 		margin-top: 0.45rem;
@@ -808,6 +816,10 @@ button {
 	}
 	.footer-list-soc div i {
 		cursor: pointer;
+		transition: 0.3s all ease-in-out;
+	}
+	.footer-list-soc div i:hover {
+		color: rgba(100, 0, 92, 0.551);
 	}
 	.fa-comment-dots {
 		position: absolute;
